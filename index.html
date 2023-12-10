@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/light-theme.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/map.js"></script>
+
+    <title>DEMO VERSION</title>
+</head>
+<body class="dark-theme">
+	<header class="header">
+		<div class="logo-container">
+			<img src="./images/logo.png" alt="Your Logo">
+		</div>
+        <nav class="nav-links">
+            <a href="#">О нас</a>
+            <a href="#">Меню</a>
+            <a href="#">Акции</a>
+            <a href="#">Фотоотчёты</a>
+            <a href="#">Контакты</a>
+            <a href="workers.html">Персонал</a>
+        </nav>
+
+        <div class="mobile-menu">
+	        <button class="menu-btn"></button>
+		    <div class="backdrop"></div>
+		    <div class="header-menu">
+		    	<nav>
+					<a href="#" class="link" style="animation-delay: 0.2s;">О нас</a>
+					<a href="#" class="link" style="animation-delay: 0.3s;">Меню</a>
+					<a href="#" class="link" style="animation-delay: 0.4s;">Акции</a>
+		    		<a href="#" class="link" style="animation-delay: 0.5s;">Фотоотчёты</a>
+					<a href="#" class="link" style="animation-delay: 0.6s;">Контакты</a>
+					<a href="#" class="link" style="animation-delay: 0.8s;">Персонал</a>
+		    	</nav>
+			</div>
+		</div>
+    </header>
+
+    	<div id="welcome" class="full-width">
+			<h1>Ресторан «Горный ручей»</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus expedita quia ratione soluta natus velit at. Eaque, corporis ratione quisquam rerum beatae exercitationem alias voluptates ea corrupti inventore maiores enim! [хз что тут делать]</p>
+    	</div>
+		<!--label id="switchTime">
+			<input type="checkbox">
+			<div></div>
+		</label-->
+			
+		</div>
+        <!-- Блок "Our Story" -->
+        <div class="story full-width cent-cont min-block-height">
+        	<span class="worker-name">tasty and crunchy</span>
+        	<h1 class="undl-head">our story</h1>
+        	<p>Lorem ipsum, dolor sit <span class="important dark-theme">amet consectetur adipisicing</span> elit. Temporibus ab quae vel perferendis corrupti ipsum placeat excepturi porro similique incidunt, modi enim cum, nam quis rem totam doloribus nemo aut. Lorem, <span class="important dark-theme">ipsum dolor</span> sit amet consectetur adipisicing elit. Maiores adipisci cum nam, ad, placeat <span class="important dark-theme">animi ipsa</span> neque sapiente dolor dolorum iusto provident quas quis, repudiandae a distinctio rerum officiis harum?</p>
+
+        	<div class="half-width">
+        		<img src="./images/ruchey.jpg" alt="">
+        	<img src="./images/ruchey.jpg" alt="">
+        	</div>
+        	
+        	<p class="worker-name">Sam Lake</p>
+    	</div>
+
+        <!-- Блок "Concept" -->
+        <div class="half-width set-h info min-block-height cent-cont">
+        	<h1 class="undl-head">concept</h1>
+        	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="important dark-theme">Optio repellat assumenda</span> fugit, nam, officia aut, quis modi aliquam aspernatur dolorum sed nihil dignissimos quidem eaque nobis commodi quae cum totam.</p>
+        	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sunt in libero alias omnis <span class="important dark-theme">quod nam unde ea magnam</span> iste tenetur obcaecati voluptatibus sed rerum aliquam dolore, voluptatum, qui inventore natus.</p>
+        	<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sunt in libero alias omnis <span class="important dark-theme">quod nam unde ea magnam</span> iste tenetur obcaecati voluptatibus sed rerum aliquam dolore, voluptatum, qui inventore natus.</p>
+        </div>
+        <div class="half-width set-h concept-ph min-block-height"></div>
+
+        <!-- Блок "Menu" -->
+		<div class="full-width">
+			<div class="demo__vertical-line"></div>
+			<h1 class="undl-head">MENU</h1>
+			<div class="demo__menu">
+				<div class="demo__type-menu">
+					<h1>Georgian</h1>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990 </div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+				</div>
+				<div class="demo__type-menu">
+					<h1>Ukrainian</h1>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+				</div>
+				<div class="demo__type-menu">
+					<h1>appetizers</h1>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+				</div>
+				<div class="demo__type-menu">
+					<h1>brazier</h1>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+					<div class="demo__menu-item">
+						<img src="images/goslingava.png" class="demo__item-img">
+						<div class="demo__item-name">kebab......................................................</div>
+						<div class="demo__item-price">990</div>
+						<div class="demo__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum excepturi, veniam sequi modi explicabo suscipit porro dolore nam. 	</div>
+					</div>
+				</div>
+			</div>
+			<div class="demo__vertical-line"></div>
+		</div>
+
+        <!-- Блок "Workers" -->
+        <div class="half-width emp-ph min-block-height"></div>
+        <div class="half-width info cent-cont min-block-height">
+        	<h1 class="undl-head">Персонал</h1>
+        	<p>If I drive for you, <span class="important dark-theme">you get your money</span>. You tell me where we start, where we're going, where we're going afterwards. <span class="important dark-theme">I give you five minutes</span> when we get there. Anything happens in that five minutes and I'm yours.</p><p><span class="important dark-theme">No matter what.</span> Anything a minute on either side of that and you're on your own. I don't sit in while you're running it down. I don't carry a gun. <span class="important dark-theme">I drive.</span></p>
+        	<!-- сделать сотрудников вертикальным слайдером -->
+        	<img src="./images/goslingava.png" alt="Аватар" class="avatar">
+        	<p><span class="worker-name">Ryan Gosling</span><br><span class="worker-work">the driver</span></p>
+		</div>
+
+        <!-- Блок "Bar" -->
+        <div class="half-width info min-block-height cent-cont">
+        	<h1 class="undl-head">Bar</h1>
+        	<p>Nestled in the heart of an ancient forest, <span class="important-wt">Mountain Stream</span> is a rustic haven with a charming atmosphere. The bar, crafted from the heartwood of <span class="important-wt">ancient oaks</span>, stands as a testament to exquisite krasnolud craftsmanship. The air is filled with the enticing aroma of pine and <span class="important-wt">wildflowers</span>, setting the stage for a unique blend of mead, ale, and spirits.</p>
+        </div>
+        <div class="half-width bar-ph min-block-height"></div>
+
+        <!-- Блок "Gallery" -->
+        <div class="full-width">
+			<div class="demo__vertical-line"></div>
+        	<h1 class="undl-head">Gallery</h1>
+			<div class="menu">
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/moisha.png" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Crimean Cheeses</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>4.6/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Crimean</span>
+							<span class="tag">Cold</span>
+							<span class="tag">Appetizers</span>
+						</div>
+						<p class="desc">
+							Savor the exquisite flavors of our Crimean cheeses, expertly crafted with local ingredients to deliver a captivating symphony of textures and tastes.
+						</p>
+						<div class="cast">
+							<h3>Cooks by</h3>
+							<ul>
+								<li><img src="images/capyava.png" alt="capy" title="capy"></li>
+								<li><img src="images/driver.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/sacivi.jpeg" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Сациви</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<span>4.3/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Грузинская</span>
+							<span class="tag">Соусы</span>
+							<span class="tag">Маринады</span>
+						</div>
+						<p class="desc">
+							Насладитесь вкусом грузинской кухни с нашим сациви — нежным мясным маринадом, приготовленным по традиционному рецепту с использованием изысканных грузинских специй.						</p>
+						<div class="cast">
+							<h3>Приготовлено</h3>
+							<ul>
+								<li><img src="images/moisha.png"></li>
+								<li><img src="images/link.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/sacivi.jpeg" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Сациви</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<span>4.3/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Грузинская</span>
+							<span class="tag">Соусы</span>
+							<span class="tag">Маринады</span>
+						</div>
+						<p class="desc">
+							Насладитесь вкусом грузинской кухни с нашим сациви — нежным мясным маринадом, приготовленным по традиционному рецепту с использованием изысканных грузинских специй.						</p>
+						<div class="cast">
+							<h3>Приготовлено</h3>
+							<ul>
+								<li><img src="images/moisha.png"></li>
+								<li><img src="images/link.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/sacivi.jpeg" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Сациви</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<span>4.3/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Грузинская</span>
+							<span class="tag">Соусы</span>
+							<span class="tag">Маринады</span>
+						</div>
+						<p class="desc">
+							Насладитесь вкусом грузинской кухни с нашим сациви — нежным мясным маринадом, приготовленным по традиционному рецепту с использованием изысканных грузинских специй.						</p>
+						<div class="cast">
+							<h3>Приготовлено</h3>
+							<ul>
+								<li><img src="images/moisha.png"></li>
+								<li><img src="images/link.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="menu-item">
+					<div class="dish-ph"><img src="images/sacivi.jpeg" alt="Moisha the Pug"></div>
+					<div class="menu-info">
+						<h1>Сациви</h1>
+						<div class="rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<span>4.3/5</span>
+						</div>
+						<div class="tags">
+							<span class="tag">Грузинская</span>
+							<span class="tag">Соусы</span>
+							<span class="tag">Маринады</span>
+						</div>
+						<p class="desc">
+							Насладитесь вкусом грузинской кухни с нашим сациви — нежным мясным маринадом, приготовленным по традиционному рецепту с использованием изысканных грузинских специй.						</p>
+						<div class="cast">
+							<h3>Приготовлено</h3>
+							<ul>
+								<li><img src="images/moisha.png"></li>
+								<li><img src="images/link.png"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+
+        <!-- Блок "Contact" -->
+        <div class="contact half-width min-block-height cent-cont">
+        	<h1 class="undl-head">Contacts</h1>
+        	<p>Телефон:</p>
+        	<p>+7 (978) 925-42-54</p>
+        	<p>Время работы:</p>
+        	<p>Ежедневно - 12:00-00:00</p>
+        	<p>Адрес:</p>
+        	<p>Ялта, пгт. Виноградное, ул. Яузы 12</p>
+        	<p>ig: @gorniy_ruchey</p>
+        </div>
+        <div class="full-width">
+        	<!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711.4673397122995!2d34.11181404142457!3d44.49734362198038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4094c8c3a3234efd%3A0xdd301d0620f5e398!2sGornyy%20Ruchey!5e0!3m2!1sen!2sde!4v1702037176883!5m2!1sen!2sde&theme=dark" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
+			<div id="map"></div>
+			<!-- 
+			The `defer` attribute causes the callback to execute after the full HTML
+			document has been parsed. For non-blocking uses, avoiding race conditions,
+			and consistent behavior across browsers, consider loading using Promises.
+			See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+			for more information.
+			-->
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+        </div>
+    <!--/div-->
+
+    <footer class="full-width">
+		<div class="demo-foot-col">
+			<h1>Mountain Stream</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas animi, dolorum amet cupiditate, maiores laboriosam commodi voluptatem eius vero eum deserunt sapiente eos corporis laborum illo placeat facilis hic. Ratione.</p>
+			<p>designed by <a href="https://instagram.com/ph.iamcara">@ph.iamcara</a> & <a href="https://vk.com/dashukoda">@dashukoda</a></p>
+		</div>
+		<div class="demo-foot-col1">
+			<h1>mail us</h1>
+			<p>FOLLOW US</p>
+		</div>
+	</footer>
+</body>
+</html>
