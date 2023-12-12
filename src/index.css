@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* общие цвета */
+:root {
+    --total-background: #171c28;
+    --total-color:      #f0f0f0;
+    --block-background: #040a1a;
+}
+
+/* */
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Manrope', sans-serif; */
+  font-family: 'Raleway', sans-serif;
+  /* варианты цвета на фон #14100a #171c28 */
+
+  background: var(--total-background);
+  color: var(--total-color);
+  transition: background .4s ease;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+}
+
+/*** выделение текста ***/
+::selection {
+  background-color: #F37F5F;
+}
+
+::-moz-selection { /* для мозилы */
+  background-color: #F37F5F;
+}
+
+::ms-selection { /* для интернет эксплорера */
+  background-color: #F37F5F;
+}
+
+/*** скроллбар ***/
+::-webkit-scrollbar {
+  background-color: #373737;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1E1E1E;
+}
+
+/*** классы, которые будут везде ***/
+
+/* выделение важного */
+.important {
+  display: inline-block;
+  padding: 2px;
+  font-weight: bold;
+
+  background: var(--total-color);
+  color: var(--total-background);
+}
+
+/* для супермегакрутых заголовков */
+.undl-head {
+  text-align: center; 
+  position: relative; 
+
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+}
+
+.undl-head::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+  min-width: 30px;
+  height: 5px;
+  background-color: #B1AF57;
+}
+
+/* чтоб было по центру */
+.cent-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cent-cont > p {
+  min-width: calc(114%/2.19);
+  max-width: calc(114%/1.78);
+  font-size: 28px;
+  line-height: 1.4em;
+}
+
+/* будет у блоков с текстом */
+.info {
+  background: var(--block-background); /* url('../images/bg-info.png'); */
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/**** ХЕДЕР ****/
+header {
+  height: 14vh;
+  width: 100%;
+  
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.78vw;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  
+  padding: 10px 0;
+  top: 0;
+  
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+/* навигация */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* ссылки с подчёркиванием */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--total-color);
+  overflow: hidden;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  transition: width 200ms linear;
+
+  background-color: var(--total-color);
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+}
+
+/* логотип */
+.logo-container {
+  position: absolute;
+  left: 10px;
+}
+
+.logo-container img {
+  height: 100%;
+  max-height: 120px;
+  margin-left: 30px;
+}
+
+/* все настройки моб меню в mobile.css */
+.mobile-menu {
+  display: none;
+}
+
+/******** БЛОКИ ********/
+.full-width {
+  grid-column: span 2;
+}
+
+.half-width {
+  grid-column: span 1;
+}
+
+.min-block-height {
+  min-height: 50vw;
+}
+
+/**** ЗАГЛАВНЫЙ БЛОК ****/
+#welcome {
+  min-height: 100vh;
+  background: url('../public/images/bg-test.jpg');
+  /*filter: grayscale(100%); */
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+#welcome h1 {
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .17em;
+}
+#welcome p {
+  width: 60%;
+  font-size: 34px;
+  text-align: center;
+}
+
+/**** ФОНЫ ДЛЯ БЛОКОВ ****/
+.emp-ph {
+  /*filter: grayscale(100%); */
+  background: url('../public/images/driver.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.concept-ph {
+  background: url('../public/images/ruchey_snow.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bar-ph {
+  background: url('../public/images/ruchey_night.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/**** БЛОК С МЕНЮ ****/
+.demo__vertical-line {
+  height: 200px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.demo__vertical-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: #B1AF57; /* Цвет линии */
+}
+
+.demo__menu {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 50px;
+}
+
+.demo__type-menu {
+  grid-column: span 1;
+  font-size: 25px;
+}
+
+.demo__type-menu:nth-child(odd) {
+  padding-left: 20vh;
+}
+
+.demo__menu-item {
+  display: grid;
+  grid-template-columns: .2fr 1.4fr .6fr;
+  min-height: 100px;
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 60px;
+  
+  align-items: center;
+}
+
+.demo__item-img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+
+  grid-row: span 2;
+  background-color: #B1AF57;
+}
+
+.demo__item-price {
+  grid-row: span 1;
+  font-size: 24px;
+}
+
+.demo__item-price::after {
+  content: ' ₽';
+}
+
+.demo__item-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.demo__item-desc {
+  font-size: 18px;
+}
+
+.demo__type-menu h1 {
+  letter-spacing: .19em;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/**** КАРТА ВНИЗУ СТРАНИЦЫ ****/
+#map {
+  min-height: 60vh;
+}
+
+/**** ФУТЕР ****/
+footer {
+  background: var(--total-background);
+  color: var(--total-color);
+  padding: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.14fr .86fr;
+  gap: 0;
+}
+
+/* колонки */
+.demo-foot-col {
+  background: var(--block-background);
+  padding: 6vh 6vh 6vh 30vh; /* Верхнее правое нижнее левое */
+  font-size: 20px;
+}
+
+/* ссылки в футере */
+footer a {
+text-decoration: none;
+color: var(--total-color);
+font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+footer a::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 5px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+footer a:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+
+/**** ПОТОМ ПЕРЕМЕСТИТЬ В НОРМ МЕСТО ****/
+.avatar {
+  width: 180px; /* Установите нужную ширину */
+  height: 180px; /* Установите нужную высоту */
+  border-radius: 50%; /* Сделайте круглое с помощью радиуса границы */
+  object-fit: cover; /* Подгоняет изображение в пределах размеров без искажения */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.worker-name {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #B1AF57;
+  letter-spacing: 0.15em;
+}
+
+/* должность */
+.worker-work {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 18px;
+}
